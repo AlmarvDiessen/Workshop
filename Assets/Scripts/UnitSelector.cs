@@ -15,7 +15,7 @@ public class UnitSelector : MonoBehaviour{
     // cache mouse position.
 
     //create a public property for the selected units.
-    public List<GameObject> SelectedUnits => _selectedUnits;
+   // public List<GameObject> SelectedUnits => _selectedUnits;
     
     private event Action _onBoxDragEvent;
 
@@ -47,6 +47,47 @@ public class UnitSelector : MonoBehaviour{
         _unitSelection.Unit.Selection.canceled -= DragSelect;
     }
 
+
+    private void SelectionBox(){
+        // activate the selection box
+
+        //calculate the box width and height based on mouse postion and cache these values.
+         //width
+         //height
+
+
+        //size the selection box 
+        //calculate and anchor the box to the you stored mouse position
+    }
+
+    private bool BoxContainsUnit(Vector3 unitToScreenPosition){
+        //calculate the minimum corner and maximum corner of the box.
+        
+        // if the unit position is with in the box return true
+        
+        return false;
+    }
+    private void SelecUnits(){
+        // loop through each unit
+          
+            //cache the unit's postion from world to the screen.
+            
+            //check if the unit is inside the selection box
+                
+                //add the unit to the selected unit list.
+                //get ISelectable component and activate the selection marker.
+    }
+
+
+    private void DeselectUnits(){
+        
+        // loop through the selected units
+            //disable the  selectable object's selection marker.
+
+
+        //clear the selected units for the next time we want to select units.
+  
+    }
     private void DragSelect(InputAction.CallbackContext obj){
         //check if we clicked and if the Coroutine is null
         //store current mouse position
@@ -62,44 +103,5 @@ public class UnitSelector : MonoBehaviour{
             //deactivate the box when done dragging the mouse.
             //clear _onDragCoroutine 
         }
-    }
-
-    private void SelectionBox(){
-        // activate the selection box
-
-        //calculate the box width and height based on mouse postion and cache these values.
-
-
-        //size the selection box 
-        //calculate and anchor the box to the you stored mouse position
-    }
-
-    private void SelecUnits(){
-        // loop through each unit
-          
-            //cache the unit's postion from world to the screen.
-            
-            //check if the unit is inside the selection box
-                
-                //add the unit to the selected unit list.
-                //activate the selection marker.
-    }
-
-    private bool BoxContainsUnit(Vector3 unitToScreenPosition){
-        //calculate the minimum corner and maximum corner of the box.
-        
-        // if the unit position is with in the box return true
-        
-        return false;
-    }
-
-    private void DeselectUnits(){
-        
-        // loop through the selected units
-            //disable the selection marker.
-
-
-        //clear the selected units for the next time we want to select units.
-  
     }
 }

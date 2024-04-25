@@ -381,11 +381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e715de66be589994a85056bf0768115d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _units:
-  - {fileID: 1864708471972469014}
-  _selectedUnits: []
-  _selectionBox: {fileID: 0}
-  _mousePosition: {x: 0, y: 0, z: 0}
 --- !u!4 &589560565
 Transform:
   m_ObjectHideFlags: 0
@@ -4399,9 +4394,9 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 705507995}
-  - {fileID: 5676094483836913983}
+  - {fileID: 102511979}
   - {fileID: 589560565}
-  - {fileID: 1345194019313206188}
+  - {fileID: 5676094483836913983}
   - {fileID: 126999660}
   - {fileID: 1132079156}
-  - {fileID: 102511979}
+  - {fileID: 1345194019313206188}
